@@ -164,12 +164,12 @@ public:
 
 class ACO {
 public:
-	int N;											// cities
-	int M;											// no.of ants
-	vector<Ant> ant;						// ants
-	double evaporation;					// evaporation rate
-	double alpha;								// importance of the pheromone level
-	double beta;								// importance of the visibility
+	int N;					// cities
+	int M;					// no.of ants
+	vector<Ant> ant;			// ants
+	double evaporation;			// evaporation rate
+	double alpha;				// importance of the pheromone level
+	double beta;				// importance of the visibility
 
 	ACO(double a,double b,double e) {
 		alpha = a;
@@ -221,8 +221,8 @@ public:
 int main(void) {
 	time_t t;
 	srand(time(&t));
-	double alpha			 = 1;						// pheromone importance
-	double beta	 			 = 2;						// visibility importance
+	double alpha = 1;						// pheromone importance
+	double beta = 2;						// visibility importance
 	double evaporation = 0.1;					// evaporation rate
 	ACO colony(alpha,beta,evaporation);
 	colony.run();
